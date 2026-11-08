@@ -11,7 +11,7 @@ function Nav() {
       <nav aria-label="Main Navigation">
         <ol>
           <li>
-            <div></div>
+            <a href={`/#home`}>home</a>
           </li>
 
           <ol>
@@ -21,7 +21,7 @@ function Nav() {
             <li>
               <p onClick={() => setOpen((prev) => !prev)}>
                 {" "}
-                {!open ? "explore" : "close"}
+                {!open ? "[explore]" : "[close]"}
               </p>
             </li>
           </ol>
