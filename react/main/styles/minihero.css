@@ -1,0 +1,21 @@
+.miniHero {
+  display: flex;
+  height: 250px;
+  background-color: pink;
+}
+
+.leftMiniHero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+}
+
+.cloudHolder.rightMiniHero {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 11%;
+  align-items: center;
+  height: 100%;
+  width: 40%;
+}

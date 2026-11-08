@@ -9,23 +9,22 @@ function Nav() {
   return (
     <div>
       <nav aria-label="Main Navigation">
-        <ol>
+        <ul>
           <li>
             <a href={`/#home`}>home</a>
           </li>
 
-          <ol>
+          <ul>
             <li>
               <Search />
             </li>
             <li>
               <p onClick={() => setOpen((prev) => !prev)}>
-                {" "}
                 {!open ? "[explore]" : "[close]"}
               </p>
             </li>
-          </ol>
-        </ol>
+          </ul>
+        </ul>
       </nav>
 
       {open && <OpenedNav />}

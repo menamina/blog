@@ -1,5 +1,4 @@
 import { Outlet } from "react-router-dom";
-import Cloud1 from "./blocks/cloud1";
 import StickyClouds from "./blocks/stickyClouds";
 import Nav from "./blocks/nav";
 
@@ -14,8 +13,17 @@ function Index() {
         justifyContent: "space-between",
       }}
     >
-      <Nav />
-      <Outlet></Outlet>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          padding: "30px",
+          height: "100%",
+        }}
+      >
+        <Nav />
+        <Outlet></Outlet>
+      </div>
       <StickyClouds />
     </div>
   );

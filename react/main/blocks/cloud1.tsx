@@ -1,12 +1,11 @@
 import "../styles/clouds.css";
 
-function Cloud1() {
-  // const { src, alt, cloudHeight, cloudWidth } = cloudProps;
+function Cloud1(cloudProps: any) {
+  const { src, alt } = cloudProps;
 
   return (
-    // style={{ height: cloudHeight, width: cloudWidth }}
     <div className="cloud1">
-      {/* <img src={src} alt={alt} className="imageInCloud" /> */}
+      <img src={src} alt={alt} className="imageInCloud" />
     </div>
   );
 }

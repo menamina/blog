@@ -5,6 +5,12 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 const queryClient = new QueryClient();
 
 import Index from ".";
+import Home from "./pages/home";
+import Programming from "./pages/programming";
+import Art from "./pages/art";
+import Gamming from "./pages/games";
+import Makeup from "./pages/makeup";
+import Random from "./pages/random";
 
 const router = createBrowserRouter([
   {
@@ -12,30 +18,30 @@ const router = createBrowserRouter([
     element: <Index />,
     children: [
       { index: true, element: <Home /> },
-      {
-        path: "/programing",
-        element: <Programming />,
-      },
-      {
-        path: "/programing",
-        element: <Programming />,
-      },
-      {
-        path: "/art",
-        element: <Art />,
-      },
-      {
-        path: "/games",
-        element: <Gamming />,
-      },
-      {
-        path: "/makeup",
-        element: <Makeup />,
-      },
-      {
-        path: "/random",
-        element: <Random />,
-      },
+      // {
+      //   path: "/programing",
+      //   element: <Programming />,
+      // },
+      // {
+      //   path: "/programing",
+      //   element: <Programming />,
+      // },
+      // {
+      //   path: "/art",
+      //   element: <Art />,
+      // },
+      // {
+      //   path: "/games",
+      //   element: <Gamming />,
+      // },
+      // {
+      //   path: "/makeup",
+      //   element: <Makeup />,
+      // },
+      // {
+      //   path: "/random",
+      //   element: <Random />,
+      // },
     ],
   },
 ]);
