@@ -1,9 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .cloud1 {
   background-color: #fff;
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  margin-left: -60px;
   box-shadow:
     65px -15px 0px -5px #fff,
     25px -25px #fff,
@@ -12,19 +16,103 @@
     85px 5px 0 -5px #fff;
 }
 
-.imageInCloud {
+/* .imageInCloud {
   width: 100%;
   height: 100%;
   overflow: hidden;
   object-fit: contain;
+} */
+
+.parent-cloud {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: min-content;
+  overflow: hidden;
+  position: sticky;
+  bottom: 0;
+  backdrop-filter: blur(10px);
 }
 
-body {
-  background-color: gray;
-  place-items: center;
-  display: grid;
-  min-height: 100vh;
+.leftCloudParent {
+  display: flex;
+  align-self: flex-end;
+  height: 100%;
+  width: 50%;
 }
+
+.rightCloudParent {
+  display: flex;
+  align-self: flex-end;
+  width: 50%;
+  height: 100%;
+}
+
+.cloudbanner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: hue-rotate(280deg) saturate(0.1) brightness(1.15);
+}
+
+/* .leftCloud {
+  background-color: rgba(156, 216, 249, 0.9);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow:
+    30px -10px 0px 70px rgba(128, 189, 222, 0.534),
+    30px -10px 0px 70px rgba(128, 189, 222, 0.534),
+    30px -10px 0px 70px rgba(128, 189, 222, 0.534),
+    210px 40px 0px 70px
+      rgba(128, 189, 222, 0.534),
+    210px 40px 0px 70px rgba(128, 189, 222, 0.534),
+    210px 40px 0px 70px rgba(128, 189, 222, 0.534),
+    405px 70px 0px 60px
+      rgba(128, 189, 222, 0.534),
+    405px 70px 0px 60px rgba(128, 189, 222, 0.534),
+    405px 70px 0px 60px rgba(128, 189, 222, 0.534),
+    545px 95px 0px 50px
+      rgba(128, 189, 222, 0.534),
+    545px 95px 0px 50px rgba(128, 189, 222, 0.534),
+    545px 95px 0px 50px rgba(128, 189, 222, 0.534),
+    690px 130px 0px 70px
+      rgba(128, 189, 222, 0.534),
+    690px 130px 0px 70px rgba(128, 189, 222, 0.534),
+    690px 130px 0px 70px rgba(128, 189, 222, 0.534),
+    865px 165px 0px 80px
+      rgba(128, 189, 222, 0.534),
+    865px 165px 0px 80px rgba(128, 189, 222, 0.534),
+    865px 165px 0px 80px rgba(128, 189, 222, 0.534),
+    -20px -40px 0px 70px rgba(128, 189, 222, 0.534),
+    -20px -40px 0px 75px white,
+    -20px -40px 0px 76px white,
+    100px 20px 0px 75px rgba(128, 189, 222, 0.534),
+    100px 20px 0px 80px white,
+    100px 20px 0px 81px white,
+    320px 60px 0px 65px rgba(128, 189, 222, 0.534),
+    320px 60px 0px 70px white,
+    320px 60px 0px 71px white,
+    490px 80px 0px 50px rgba(128, 189, 222, 0.534),
+    490px 80px 0px 55px white,
+    490px 80px 0px 56px white,
+    600px 110px 0px 50px rgba(128, 189, 222, 0.534),
+    600px 110px 0px 55px white,
+    600px 110px 0px 56px white,
+    780px 150px 0px 90px rgba(128, 189, 222, 0.534),
+    780px 150px 0px 95px white,
+    780px 150px 0px 96px white,
+    950px 180px 0px 70px rgba(128, 189, 222, 0.534),
+    950px 180px 0px 75px white,
+    950px 180px 0px 76px white;
+}
+
+.rightCloud {
+  background-color: gray;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+} */
 
 /* box-shadow: [inset horizontal x] [offset-y]  [blur-radius] [spread-radius how big] [color]; */
 /*  The inset property sets the distance between an element and the parent element.   */

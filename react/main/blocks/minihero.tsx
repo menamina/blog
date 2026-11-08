@@ -7,7 +7,14 @@ function MiniHero() {
         <div></div>
         <div></div>
       </div>
-      <div>
+      <div
+        className="cloudHolder"
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
         <Cloud1 />
       </div>
     </div>

@@ -10,33 +10,33 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Index />,
-    // children: [
-    //   { index: true, element: <Home /> },
-    //   {
-    //     path: "/programing",
-    //     element: <Programming />,
-    //   },
-    //   {
-    //     path: "/programing",
-    //     element: <Programming />,
-    //   },
-    //   {
-    //     path: "/art",
-    //     element: <Art />,
-    //   },
-    //   {
-    //     path: "/games",
-    //     element: <Gamming />,
-    //   },
-    //   {
-    //     path: "/makeup",
-    //     element: <Makeup />,
-    //   },
-    //   {
-    //     path: "/random",
-    //     element: <Random />,
-    //   },
-    // ],
+    children: [
+      { index: true, element: <Home /> },
+      {
+        path: "/programing",
+        element: <Programming />,
+      },
+      {
+        path: "/programing",
+        element: <Programming />,
+      },
+      {
+        path: "/art",
+        element: <Art />,
+      },
+      {
+        path: "/games",
+        element: <Gamming />,
+      },
+      {
+        path: "/makeup",
+        element: <Makeup />,
+      },
+      {
+        path: "/random",
+        element: <Random />,
+      },
+    ],
   },
 ]);
 
